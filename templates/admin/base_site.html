@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+{#{% extends "base.html" %}#}
+
+
+{% block branding %}
+    <br>
+    <div style="display: inline">
+        <h2 style="display: inline" id="site-name"><a href="{% url 'admin:index' %}">Photo center</a></h2>
+        <h2 style="display: inline" id="site-name"><a href="{% url 'photologue:pl-photo-archive' %}">View photos</a></h2>
+        <h2 style="display: inline" id="site-name"><a href="{% url 'polls:index' %}">Home</a></h2>
+    </div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
